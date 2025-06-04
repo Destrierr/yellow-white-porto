@@ -147,19 +147,22 @@ nav,
     margin-top: 20px;
 }
 
-.skills {
+.skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+    /* justify-content: center; */
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-.skills span {
-    background: #e0e0e0;
-    padding: 10px 20px;
-    border-radius: 5px;
+.skill {
+    background-color: #ddd;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
     font-weight: bold;
-    display: flex;
+    color: #27548A;
+    font-size: 0.95rem;
+    transition: background 0.3s;
 }
 
 .about-info {
