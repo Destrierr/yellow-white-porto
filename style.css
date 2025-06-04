@@ -357,11 +357,73 @@ footer i{
     color: #ff2929;
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1200px){
     .about-container{
-        width: 90%;
+        width: 100%;
+    }
+   
+    #project{
+        margin-top: 5rem;
+    }
+
+    .project-row {
+        flex-direction: column; /* Stack project items vertically */
+        align-items: center; /* Center align project items */
+        margin-bottom: 4rem;
+    }
+
+    .project-flex {
+        flex: 0 0 100%; /* Full width for project items */
+        max-width: 100%; /* Full width for project items */
+        padding: 0 10px; /* Reduce padding */
+    }
+
+    .project-text {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center align text */
+        padding: 1rem;
+    }
+
+    .project-image {
+        margin-left: 0; /* Remove left margin */
+        max-width: 100%; /* Ensure image fits within container */
+        min-width: unset;
+        width: 100%;
+    }
+
+    .project-text-title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem; 
+}
+
+.project-text{
+    max-width: 600px; /* Limit caption width */
+    margin-left: 60px; /* Space between image and caption */
+    text-align: left; /* Align text to the left */
+    padding: 2rem 0;
+    align-items: flex-start;
+}
+
+.project-desc{
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+    .button {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 14px; /* Smaller button font size */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Smaller footer font size */
     }
 }
+/*  */
 
 @media only screen and (max-width: 768px) {
     header {
