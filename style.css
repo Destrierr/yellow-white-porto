@@ -349,9 +349,9 @@ nav,
 /* Footer */
 footer{
     width: 100%;
-    background-color: #feba17;
     padding: 1.5rem 1rem;
     text-align: center;
+    background-color: #FEBA17;
 }
 footer i{
     color: #ff2929;
@@ -375,12 +375,14 @@ footer i{
 
     .today-date {
         font-size: 1.5rem; /* Smaller date font size */
+        align-items: flex-start;
+        margin-top: 3rem;
     }
 
     .social-media {
         flex-direction: column; /* Stack social media links */
         width: 100%; /* Full width */
-        align-items: center; /* Center align */
+        align-items: flex-end; /* Center align */
     }
 
     .social-media li {
@@ -407,9 +409,18 @@ footer i{
         align-items: center; /* Center align skills */
     }
 
+    .skills-list {
+    margin-bottom: 3rem;
+    }
+
+    #project{
+        margin-top: 5rem;
+    }
+
     .project-row {
         flex-direction: column; /* Stack project items vertically */
         align-items: center; /* Center align project items */
+        margin-bottom: 4rem;
     }
 
     .project-flex {
@@ -421,12 +432,14 @@ footer i{
     .project-text {
         margin-left: 0; /* Remove left margin */
         text-align: center; /* Center align text */
+        padding: 1rem;
     }
 
     .project-image {
         margin-left: 0; /* Remove left margin */
         max-width: 100%; /* Ensure image fits within container */
-        min-width: 300px;
+        min-width: unset;
+        width: 100%;
     }
 
     .button {
@@ -439,21 +452,27 @@ footer i{
     }
 }
 
-
-
-
-/* ============================= */
 /*        Responsive Styles      */
 /* ============================= */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
+@media only screen and (max-width: 600px) {
+     header {
+        height: auto; /* Allow header to adjust height */
+        padding: 1rem; /* Reduce padding */
     }
 
-    .btn-sign-up {
-        padding: 0.5rem 1.2rem;
-        font-size: 0.9rem;
+    .header-title {
+        font-size: 3rem; /* Smaller font size for mobile */
+        margin-top: 3rem;
+    }
+
+    .today-date {
+        margin-top: 3rem;
+    }
+
+    .social-media {
+        flex-direction: column; /* Stack social media links */
+        width: 100%; /* Full width */
+        align-items: center; /* Center align */
     }
 
     .header-bottom {
@@ -464,6 +483,19 @@ footer i{
 
     section {
         padding: 2rem 1rem;
+    }
+
+    .skills {
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center; /* Center align skills */
+    }
+
+    .skills-list {
+    margin-bottom: 3rem;
+    }
+
+    #project{
+        margin-top: 10rem;
     }
 
     h1, h2, h3 {
@@ -481,13 +513,71 @@ footer i{
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+     header {
+        height: auto; /* Allow header to adjust height */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .header-title {
+        font-size: 3rem; /* Smaller font size for mobile */
+        margin-top: 2rem;
+    }
+
+    .today-date {
+        margin-top: 3rem;
+    }
+
+    .social-media {
+        flex-direction: column; /* Stack social media links */
+        width: 100%; /* Full width */
+        align-items: center; /* Center align */
+    }
+
+    .header-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .skills {
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center; /* Center align skills */
+    }
+
+    .skills-list {
+    margin-bottom: 3rem;
+    }
+
+    .project-title { 
+    font-size: 5rem; 
+    }
+
+    #project{
+        margin-top: 25rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
     .logo a {
         font-size: 1.5rem;
     }
 
-    .btn-sign-up {
-        width: 100%;
-        text-align: center;
-    }
 }
+
